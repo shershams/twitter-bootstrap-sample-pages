@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Product 2 - Post new Classifieds</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap-dropdown.js"></script>
+    
+    <script type='text/javascript'>
+    $(document).ready(function(){
+      $('#topbar').dropdown();
+    });
+    </script>
+    
+    <!-- Le styles -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+      #thumbnails{
+        text-align:center;
+      }
+      #thumbnails input{
+        margin-top:70px;
+      }
+      #next_thumb, #prev_thumb{
+        font-size:25pt;
+        padding-top:65px;
+        height:85px;
+        width:30px;
+        text-align:center;
+      }
+      .fake-link{
+        color: #0069D6;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container span18">
+          <a class="brand" href="index.html">Project X</a>
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Sample</a></li>
+          </ul>
+          
+          <form class="pull-left" action="">
+            <input type="text" placeholder="Search">
+              <button class="btn" type="submit">Go</button>
+          </form>
+          
+          <ul class="nav secondary-nav">
+            <li><a href="#">My Account</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container span18">
+      
+      <div class='row'>
+        <div class='span18'>
+          <select class='span2'>
+            <option>For sale</option>
+            <option>For rent</option>
+            <option>Wanted</option>
+          </select>
+          /
+          <select class='span3'>
+            <option>Vehicle by dealer</option>
+            <option>Vehicle by owner</option>
+            <option>House</option>
+            <option>Events</option>
+          </select>
+          /
+          <select class='span3'>
+            <option>BMW</option>
+            <option>Mercedes</option>
+            <option>Ford</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class='cleaner_h20'></div>
+      
+      <div class="row">
+        <div class='span14'>
+          <!-- Title & Description -->
+          <input type='text' class='xlarge span10' placeholder='Title' style='font-weight:bold; color:black;'/>
+          <input type='text' class='xlarge span4' placeholder='$ Price' style='font-weight:bold; color:black;'/>
+          <div id='prev_thumb' class='pull-left'>&laquo;</div>
+          <div id='next_thumb' class='pull-right'>&raquo;</div>
+          
+          <div id='thumbnails'>
+            <input type='file' multiple=true/>
+          </div>
+        </div>
+        
+        <div class='span4'>
+          <h3>Seller Info</h3>
+          <h4 style='display:inline;'>shershams</h4> ( 661 <span style='font-size:12pt;'>&#10031;</span> )
+          <div class='cleaner'></div>
+          &#10030;&#10030;&#10030;&#10030;&#10025; 82% Positive feedback
+          <div class='cleaner_h10'></div>
+          
+          <p class='fake-link'>Contact the seller</p>
+          <p class='fake-link'>Save this seller</p>
+          <div id='flag'>
+            Flag this post:
+            <div class='cleaner'></div>
+            <span class='label' data-flag='spam'>Spam / Overpost</span>
+            <span class='label' data-flag='prohibited'>Prohibited</span>
+            <span class='label' data-flag='miscat'>Miscategorized</span>
+            <span class='label' data-flag='best'>Vote Up</span>
+          </div>
+        </div>
+      </div><!-- end of row -->
+      
+      <div class='separator cleaner_h20'></div>
+      <div class='cleaner_h20'></div>
+      
+      <!-- main description -->
+      <div class='row'>
+        <div class='span18'>
+          <input type='text' class='span6' placeholder='Sub Title'/>
+          <div class='cleaner_h10'></div>
+          <textarea class='span18' style='height:300px;'>Main message</textarea>
+        </div>
+      </div>
+      <!-- end of main description -->
+      
+      <footer>
+        <p>&copy; Company 2011 By <a href='http://www.sherzod.me' target='_blank' title='Professional Web Developer'>Sherzod Kutfiddinov</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>

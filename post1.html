@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Post 1 - Classifieds</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap-dropdown.js"></script>
+    
+    <script type='text/javascript'>
+    $(document).ready(function(){
+      $('#topbar').dropdown();
+    });
+    </script>
+    
+    <!-- Le styles -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container span18">
+          <a class="brand" href="index.html">Project X</a>
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Sample</a></li>
+          </ul>
+          
+          <form class="pull-left" action="">
+            <input type="text" placeholder="Search">
+              <button class="btn" type="submit">Go</button>
+          </form>
+          
+          <ul class="nav secondary-nav">
+            <li><a href="#">My Account</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container span18">
+      
+      <!-- Top part of ad -->
+      <div class="row">
+        <div class='span18'>
+          <h1>Post a new ad</h1>
+          
+          <div class='row'>
+            <div class='span8'>
+              <h3>Title</h3>
+              <input type='text' id='ad_title' class='span8' />
+            </div>
+            <div class='span5'>
+              <h3>Price</h3>
+              <select class='span1' id='ad_currency'>
+                <option>$</option>
+                <option>&euro;</option>
+                <option>&yen;</option>
+              </select>
+              <input type='text' id='ad_price' class='span4' />
+            </div>
+            <div class='span5'>
+              <h3>Location</h3>
+              <input type='text' id='ad_location' class='span5' />
+            </div>
+          </div>
+        </div>
+      </div><!-- end of the row -->
+      
+      <div class='separator cleaner_h20'></div>
+      <div class='cleaner_h10'></div>
+      
+      <!-- description row -->
+      <div class='row'>
+        <div class='span18'>
+          <h3>Description</h3>
+          
+          <textarea id='ad_description' style='min-width:99%; min-height:300px; resize:none;'></textarea>
+        </div>
+      </div>
+      <!-- end of the row -->
+      
+      <div class='cleaner_h20'></div>
+      
+      <div class='row'>
+        <div class='span18'>
+          <h3>Upload an image</h3>
+          
+          <input type='file' accept='image/*' multiple=true />
+        </div>
+        
+        <div class='cleaner_h10'></div>
+        
+        <div class='span18'>
+          <img src='http://placehold.it/260x160&text=your+image' />
+          <img src='http://placehold.it/260x160&text=your+image' />
+          <img src='http://placehold.it/260x160&text=your+image' />
+          <img src='http://placehold.it/260x160&text=your+image' />
+        </div>
+      </div><!-- end of the row -->
+      
+      <div class='cleaner_h20'></div>
+      
+      <div class='row'>
+        <div class='span18'>
+          <div class='btn primary large'>Continue</div>
+        </div>
+      </div>
+      
+      <footer>
+        <p>&copy; Company 2011 By <a href='http://www.sherzod.me' target='_blank' title='Professional Web Developer'>Sherzod Kutfiddinov</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>
